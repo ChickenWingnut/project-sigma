@@ -10,18 +10,54 @@
     <div id="hexGrid" style="float: left; width: 400px;">
       <div class="hex-row">
           <div style="opacity: 0; cursor:default" class="hex"><div class="top" style="border-bottom: 30px solid orange;"></div><div style="background: orange;" class="middle">Hi I'm Hidden</div><div class="bottom" style="border-top: 30px solid orange;"></div></div>
-          <div class="hex"><div class="top" style="border-bottom: 30px solid #22A99D;"></div><div style="background: #22A99D;" class="middle">Dr. Yue Chen</div><div class="bottom" style="border-top: 30px solid #22A99D;"></div></div>
-          <div class="hex"><div class="top" style="border-bottom: 30px solid #4D72B1;"></div><div style="background: #4D72B1;" class="middle">Publications</div><div class="bottom" style="border-top: 30px solid #4D72B1;"></div></div>
+          <div class="hex"><div class="top" style="border-bottom: 30px solid #22A99D;"></div><div style="background: #22A99D;" class="middle">
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Dr.YueChen">
+              Dr. Yue Chen
+            </button>
+            
+          </div><div class="bottom" style="border-top: 30px solid #22A99D;"></div></div>
+          <div class="hex"><div class="top" style="border-bottom: 30px solid #4D72B1;"></div><div style="background: #4D72B1;" class="middle">
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Publications">
+              Publications
+            </button>
+
+          </div><div class="bottom" style="border-top: 30px solid #4D72B1;"></div></div>
       </div>
       <div id="evenRow" class="hex-row even">
-          <div class="hex"><div class="top" style="border-bottom: 30px solid #3498C8;"></div><div style="background: #3498C8;" class="middle">Contact Us</div><div class="bottom" style="border-top: 30px solid #3498C8;"></div></div>
+          <div class="hex"><div class="top" style="border-bottom: 30px solid #3498C8;"></div><div style="background: #3498C8;" class="middle">
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ContactUs">
+              Contact Us
+            </button>
+
+          </div><div class="bottom" style="border-top: 30px solid #3498C8;"></div></div>
           <div class="middle_hex" style="pointer-events: none; cursor: default"><div class="top" style="border-bottom: 30px solid #eeeeee;"></div><div style="background: #eeeeee;" class="middle" id="centercenterHex">We develop functional proteomics technology to discover novel posttranslational modification pathways and regulatory mechanisms in cells and diseases.</div><div class="bottom" style="border-top: 30px solid #eeeeee;"></div></div>
-          <div class="hex"><div class="top" style="border-bottom: 30px solid #8CC84D;"></div><div style="background: #8CC84D;" class="middle">Research</div><div class="bottom" style="border-top: 30px solid #8CC84D;"></div></div>
+          <div class="hex"><div class="top" style="border-bottom: 30px solid #8CC84D;"></div><div style="background: #8CC84D;" class="middle">
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Research">
+              Research
+            </button>
+
+          </div><div class="bottom" style="border-top: 30px solid #8CC84D;"></div></div>
       </div>
       <div class="hex-row">
           <div style="opacity: 0;cursor: default" class="hex" opacity:=""><div class="top" style="border-bottom: 30px solid lime;"></div><div style="background: lime;" class="middle">Hi I'm Hidden</div><div class="bottom" style="border-top: 30px solid lime;"></div></div>
-          <div class="hex"><div class="top" style="border-bottom: 30px solid #A7DEE8;"></div><div style="background: #A7DEE8;" class="middle">Members</div><div class="bottom" style="border-top: 30px solid #A7DEE8;"></div></div>
-          <div class="hex"><div class="top" style="border-bottom: 30px solid #9AB4CC;"></div><div style="background: #9AB4CC;" class="middle">News and Updates</div><div class="bottom" style="border-top: 30px solid #9AB4CC;"></div></div>
+          <div class="hex"><div class="top" style="border-bottom: 30px solid #A7DEE8;"></div><div style="background: #A7DEE8;" class="middle">
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Members">
+              Members
+            </button>
+
+          </div><div class="bottom" style="border-top: 30px solid #A7DEE8;"></div></div>
+          <div class="hex"><div class="top" style="border-bottom: 30px solid #9AB4CC;"></div><div style="background: #9AB4CC;" class="middle">
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#New&Updates">
+              News and Updates
+            </button>
+
+          </div><div class="bottom" style="border-top: 30px solid #9AB4CC;"></div></div>
       </div> 
   </div>
 
@@ -30,7 +66,7 @@
 
     <!-- Dr. Yue Chen -->
     <div class="modal fade" id="Dr.YueChen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
@@ -45,6 +81,96 @@
             </div>
           </div>
         </div>
+    </div>
+    <!-- Publications -->
+    <div class="modal fade" id="Publications" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            PUT INFO HERE
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
       </div>
+  </div>
+    <!-- Contact Us -->
+    <div class="modal fade" id="ContactUs" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            PUT INFO HERE
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- Research -->
+    <div class="modal fade" id="Research" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            PUT INFO HERE
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- Members -->
+    <div class="modal fade" id="Members" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            PUT INFO HERE
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- News and Updates -->
+    <div class="modal fade" id="New&Updates" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            PUT INFO HERE
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
